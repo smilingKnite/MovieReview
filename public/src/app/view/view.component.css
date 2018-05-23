@@ -1,0 +1,33 @@
+#delete {
+    padding: 10px;
+    background-color: red;
+    font-size: 25px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+}
+#movie {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 550px;
+    margin: auto;
+}
+#movie > table {
+    margin: auto;
+}
+td {
+    padding: 8px;
+    border: 1px solid black;
+}
+#back {
+  padding: 10px;
+  font-size: 25px;
+  margin: 10px auto;
+  display: block;
+}
+tr:hover{
+    background-color: rgba(56, 56, 56, 0.514);
+    color: white;
+}
+

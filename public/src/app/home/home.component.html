@@ -1,0 +1,26 @@
+<router-outlet>
+
+  <p *ngIf="err">{{err}}</p>
+
+  <div id="allMovies">
+    <button id="add" [routerLink]="['/movies/new']">Add a new movie</button>
+    <br>
+    <br>
+    <table id="tab" *ngIf="movies">
+      <tr>
+        <th>Title</th>
+        <th>Available Actions</th>
+      </tr>
+      <tr *ngFor="let m of movies">
+        <td>{{ m.title }}</td>
+        <td>
+          <button id="read" [routerLink]="['/find-movie', m._id]">Read reviews</button>
+          <button id="write" [routerLink]="['/write-rev', m._id]">Write review</button>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+</router-outlet>
+

@@ -1,0 +1,29 @@
+<router-outlet>
+
+  <div id="show">
+    <h4>Title: {{ newMovie.title | json }}</h4>
+    <h5>Your name: {{ review.reviewer | json }}</h5>
+    <p>Stars: {{ review.stars | json }}</p>
+    <p>Your review: {{ review.review | json }}</p>
+
+  </div>
+
+  <div id="newMovies">
+    <form (submit)="onSubmit()">
+      <!-- use the json pipe to see how newTask changes in real time -->
+      <input type="text" name="newMovie.title" [(ngModel)]="newMovie.title" placeholder="Title" />
+      <input type="text" name="review.reviewer" [(ngModel)]="review.reviewer" placeholder="Your Name" />
+      <input type="Number" min="1" max="5" name="review.stars" [(ngModel)]="review.stars" placeholder="Stars" />
+      <input type="text" name="review.review" [(ngModel)]="review.review" placeholder="Your review" />
+      <input id="sub" type="submit" value="Add movie" />
+    </form>
+
+  </div>
+
+  <div id="errors" *ngIf="message">
+    <p *ngFor="let m of message">{{m}}</p>
+  </div>
+
+  <button id="back" [routerLink]="['/back']">Back</button>
+
+</router-outlet>

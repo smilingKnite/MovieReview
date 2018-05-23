@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    background: linear-gradient(to bottom right, rgb(218, 117, 238), rgb(76, 207, 109));
+    height: 100%;
+    background-repeat: none;
+}
+h1 {
+    text-decoration: underline;
+}

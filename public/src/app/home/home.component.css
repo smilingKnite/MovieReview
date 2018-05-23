@@ -1,0 +1,54 @@
+#allMovies {
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: auto;
+    border-radius: 25px;
+    width: 600px;
+    background: linear-gradient(to bottom, rgb(16, 145, 204), rgb(206, 16, 16));
+}
+#tab {
+    border: 2px solid black;
+    margin: auto;
+    padding: 8px;
+    width: 450px;
+    color: whitesmoke;
+}
+#tab td {
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+    /* color: white; */
+}
+#tab td:hover {
+    background-color: rgba(0, 0, 0, 0.438);
+}
+#add {
+    padding: 5px;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(154, 238, 253), rgb(60, 162, 230), rgb(154, 238, 253));
+    border: 2px solid black;
+
+}
+#read {
+    padding: 5px;
+    margin-right: 5px;
+    background: linear-gradient(to bottom left, rgb(175, 175, 175), aqua);
+}
+#write {
+    padding: 5px;
+    margin-left: 5px;
+    color: whitesmoke;
+    background: linear-gradient(to bottom right, rgb(175, 175, 175), rgb(252, 35, 35));
+}
+#add:hover {
+    background: linear-gradient(to right, rgb(154, 238, 253), rgb(102, 177, 226), rgb(154, 238, 253));
+    border: 2px solid black;
+
+}
+#read:hover {
+    border: 2px solid black;
+}
+#write:hover {
+    border: 2px solid black;
+}

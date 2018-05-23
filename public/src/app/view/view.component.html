@@ -1,0 +1,26 @@
+<router-outlet>
+  <button id="delete" (click)="deleteMov( movie._id )">Delete</button>
+
+  <p >{{ message }}</p>
+
+  <div id="movie">
+    <h3>Reviews for {{ movieT }}</h3>
+    <table *ngIf="movie">
+      <tr>
+        <th>Reviewer</th>
+        <th>Stars</th>
+        <th>Reviews</th>
+      </tr>
+      <tr *ngFor="let m of movie.reviews">
+        <td>{{ m.reviewer }}</td>
+        <td>{{ m.stars }}</td>
+        <td>{{ m.review }}</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <button id="back" [routerLink]="['/back']">Back</button>
+
+</router-outlet>
+
